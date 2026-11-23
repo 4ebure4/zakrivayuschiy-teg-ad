@@ -323,19 +323,13 @@
       </button>
     </main>
 
-    <dialog class="dialog" id="save-dialog">
+<dialog class="dialog" id="save-dialog">
       <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
         <use href="./svg/floppy.svg#floppy"></use>
       </svg>
       <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       <form method="dialog" class="dialog__form">
-        <button
-          type="button"
-          class="dialog__button button"
-          onclick="document.getElementById('save-dialog').close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
+        <button type="submit" class="dialog__button button"><span class="button__text">ОК</span></button>
       </form>
     </dialog>
 
