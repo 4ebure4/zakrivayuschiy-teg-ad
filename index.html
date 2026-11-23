@@ -310,10 +310,10 @@
         </div>
       </article>
 
-      <button
+<button
         type="button"
         class="save-button button"
-        onclick="window['save-dialog'].showModal()"
+        onclick="document.getElementById('save-dialog').showModal()"
         aria-controls="save-dialog"
       >
         <svg class="save-button__icon" width="21" height="21" aria-hidden="true">
@@ -329,8 +329,12 @@
       </svg>
       <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       <form method="dialog" class="dialog__form">
-        <button type="submit" class="dialog__button button">
-          <span class="button__text">ок</span>
+        <button
+          type="button"
+          class="dialog__button button"
+          onclick="document.getElementById('save-dialog').close()"
+        >
+          <span class="button__text">ОК</span>
         </button>
       </form>
     </dialog>
